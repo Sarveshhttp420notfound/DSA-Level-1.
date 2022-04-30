@@ -5,18 +5,18 @@ public class Main{
     
 public static int span(int [] arr){
     //max, min 
-    int max = Integer.MIN_VALUE;        //negative infinity
-    int min = Integer.MAX_VALUE;        //positive infinity
+    int ma = Integer.MIN_VALUE;        //negative infinity
+    int mi = Integer.MAX_VALUE;        //positive infinity
     for(int j = 0; j<arr.length; j++){
-        int currVal = arr[i];
-        if(currVal > max){
-            max = currVal;
+        int currVal = arr[j];
+        if(currVal > ma){
+            ma = currVal;
         }
-        else if(currVal < min){
-            min = currVal;
+        else if(currVal < mi){
+            mi = currVal;
         }
     }
-    return max-min;
+    return ma-mi;
 }
 
 
